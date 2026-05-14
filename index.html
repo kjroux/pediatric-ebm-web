@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pediatric EBM Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <span class="logo">📚</span>
+                <div class="header-text">
+                    <h1><a href="#" id="header-home-link" style="text-decoration: none; color: inherit;">Pediatric EBM Web</a></h1>
+                    <p class="subtitle">Curated Evidence-Based Medicine for Pediatric Subspecialties</p>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="topic-search" placeholder="Search topics..." autocomplete="off">
+                    <div id="search-dropdown" class="search-dropdown"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="top-nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#" id="nav-specialties" class="nav-link active">Specialties</a></li>
+                <li><a href="#" id="nav-index" class="nav-link">Index</a></li>
+                <li><a href="#" id="nav-faq" class="nav-link">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="breadcrumb">
+        <div class="container">
+            <span id="breadcrumb-content">
+                <a href="#" id="home-link">Home</a>
+            </span>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Specialties View -->
+        <section id="home-view" class="view active">
+            <div class="specialty-grid" id="specialty-list"></div>
+        </section>
+
+        <!-- Index View -->
+        <section id="index-view" class="view">
+            <h2>Topic Index</h2>
+            <div class="issues-list" id="index-list"></div>
+        </section>
+
+        <!-- FAQ View -->
+        <section id="faq-view" class="view">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-content">
+                <p>FAQ content coming soon...</p>
+            </div>
+        </section>
+
+        <!-- Issues View -->
+        <section id="issues-view" class="view">
+            <h2 id="specialty-title"></h2>
+            <div class="issues-list" id="issues-list"></div>
+        </section>
+
+        <!-- Articles View -->
+        <section id="articles-view" class="view">
+            <h2 id="issue-title"></h2>
+
+            <div class="articles-section" id="legacy-systematic-section">
+                <h3>Systematic Reviews & Meta-Analyses</h3>
+                <div class="articles-list" id="systematic-reviews-list"></div>
+            </div>
+
+            <div class="articles-section" id="legacy-rcts-section">
+                <h3>Major Randomized Controlled Trials</h3>
+                <div class="articles-list" id="rcts-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Pediatric EBM Web. For educational purposes only. Content created with AI. Please verify all claims independently.</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
