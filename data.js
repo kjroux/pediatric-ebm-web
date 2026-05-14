@@ -1118,5 +1118,61 @@ const articlesData = {
             "**Post-sepsis syndrome is real** — LAPSE showed 35% of survivors have persistent HRQL impairment at 1 year",
             "**Global burden immense** — half of 50 million annual cases occur in children; majority of deaths in sub-Saharan Africa"
         ]
+    },
+    "Croup": {
+        orientationReview: {
+            title: "Croup in children",
+            authors: "Bjornson CL, Johnson DW",
+            citation: "CMAJ. 2013;185(15):1317-1323",
+            pmid: "23939212",
+            doi: "10.1503/cmaj.121645",
+            keyFindings: "Concise modern overview covering epidemiology, severity assessment (Westley score), and management. Synthesizes the evidence that oral corticosteroids reduce respiratory distress severity, hospital admission, intubation, and return visits across all severities, and that most children — including many presenting with stridor at rest — can be safely discharged after dexamethasone (± epinephrine) and a few hours of observation."
+        },
+        guidelines: [
+            {
+                organization: "Canadian Paediatric Society",
+                citation: "Ortiz-Alvarez O. Paediatr Child Health. 2017;22(3):166-173",
+                pmid: "29532807",
+                doi: "10.1093/pch/pxx019",
+                url: "https://cps.ca/en/documents/position/acute-management-of-croup",
+                keyRecommendations: "Single oral dose of dexamethasone 0.6 mg/kg for all severities (mild, moderate, severe); nebulized epinephrine (racemic or L-) for moderate-to-severe croup with stridor at rest or significant retractions; observe for 2–4 hours after epinephrine and discharge if no recurrent stridor; avoid routine humidified air, antibiotics, antitussives, and decongestants; consider alternative diagnoses (bacterial tracheitis, epiglottitis, foreign body) for atypical features."
+            }
+        ],
+        landmarkRCTs: {
+            corticosteroids: [
+                {
+                    study: "PERC dexamethasone for mild croup",
+                    citation: "Bjornson CL, et al. N Engl J Med. 2004;351(13):1306-1313",
+                    pmid: "15385657",
+                    doi: "10.1056/NEJMoa033534",
+                    n: 720,
+                    finding: "Single oral dexamethasone 0.6 mg/kg in mild croup (Westley ≤2) roughly halved return visits to medical care (7.3% vs 15.3%), shortened symptom duration, and reduced parental stress — establishing steroids as standard for all severities, not just moderate-to-severe."
+                }
+            ]
+        },
+        bottomLine: {
+            effective: [
+                "Single-dose oral dexamethasone 0.6 mg/kg for all severities, including mild",
+                "Nebulized epinephrine (racemic or L-) for moderate-to-severe croup",
+                "Observation 2–4 hours post-epinephrine before discharge"
+            ],
+            uncertain: [
+                "Lower-dose dexamethasone (0.15 mg/kg) — likely non-inferior but evidence base smaller",
+                "Heliox for severe croup — limited RCT data, possible role in ICU as a bridge",
+                "Multi-dose vs single-dose dexamethasone in admitted patients"
+            ],
+            ineffective: [
+                "Humidified or 'mist' air therapy",
+                "Antibiotics in routine viral croup",
+                "Cough suppressants and decongestants"
+            ]
+        },
+        keyTeachingPoints: [
+            "**Steroids for everyone** — A single oral dose of dexamethasone 0.6 mg/kg benefits all severities; the Bjornson 2004 NEJM trial in mild croup yielded an NNT of ~12 to prevent a return medical visit.",
+            "**Epinephrine is a bridge, not a cure** — Nebulized epinephrine acts within 10–30 minutes but wears off by ~2 hours; always pair with dexamethasone and observe 2–4 hours for recurrent stridor before discharge.",
+            "**Most children go home** — Even children presenting with stridor at rest can typically be discharged safely after dexamethasone, epinephrine, and a short observation; admit for persistent stridor, repeat epinephrine doses, hypoxia, or inability to tolerate PO.",
+            "**Skip the mist tent** — Despite decades of historical use, humidified air shows no benefit in RCTs.",
+            "**Think alternative diagnosis when atypical** — Toxic appearance, drooling, absent barky cough, poor response to standard therapy, or age outside ~6 months–6 years should prompt consideration of bacterial tracheitis, epiglottitis, foreign body, or anatomic airway lesions."
+        ]
     }
 };
