@@ -1,4 +1,4 @@
-# Content Generation Guide — Pediatric EBM Web
+# Content Generation Guide — Pediatric EBM Web (Minimal Entry Version)
 
 Copy this entire file into a Claude conversation (claude.ai) to generate a new
 topic page. Replace the placeholder at the bottom with the topic you want, and
@@ -34,9 +34,9 @@ the guidelines, what works, what doesn't, and what's still uncertain.
    in `specialtiesData` (including capitalization and punctuation, e.g.
    `"Asthma: chronic management"`).
 3. **`n` in `landmarkRCTs` must be a number**, not a string (e.g. `n: 800`).
-4. All sections are **optional** except `orientationReview` — its presence is
-   what tells the app to use the rich layout. Omit any section you don't have
-   solid evidence for; don't pad.
+4. `orientationReview` is required — its presence is what tells the app to use
+   the rich layout. All other sections are optional; omit any section you don't
+   have solid evidence for, don't pad.
 5. `landmarkRCTs` subsection keys are **camelCase** and auto-render as Title Case
    (e.g. `maintenanceTherapy` → "Maintenance Therapy"). Name them by clinical
    theme.
@@ -44,14 +44,32 @@ the guidelines, what works, what doesn't, and what's still uncertain.
 7. Keep `finding` / `conclusion` / `contribution` text to roughly one sentence —
    these render inside table cells.
 
-The site footer already states content is AI-assisted and must be independently
-verified, but accuracy still matters — wrong PMIDs make the tool useless.
+---
+
+## MINIMUM VIABLE ENTRY
+
+**This is what to generate by default.** It's a focused starter entry that
+gives a usable topic page with low token cost. The remaining sections in the
+full template (below) can be added later when fleshing the topic out.
+
+A minimum viable entry contains exactly these sections:
+
+- `orientationReview` — **1** authoritative review (required).
+- `guidelines` — **1** practice guideline.
+- `landmarkRCTs` — **1–2** key trials, grouped under one clinical theme.
+- `bottomLine` — the three-column at-a-glance verdict.
+- `keyTeachingPoints` — 3–5 numbered teaching points.
+
+That's it. Skip `additionalReviews`, `negativeTrials`, `systematicReviews`,
+`observationalStudies`, `qualityImprovement`, `outcomes`, and `globalHealth`
+unless explicitly asked.
 
 ---
 
-## DATA TEMPLATE
+## DATA TEMPLATE (FULL)
 
-Fill in the sections you have good evidence for and delete the rest. Section
+The template below shows every supported section. For a minimum viable entry,
+fill in only the sections marked in the list above and delete the rest. Section
 order below matches the order they render on the page.
 
 ```javascript
@@ -78,7 +96,7 @@ order below matches the order they render on the page.
         }
     ],
 
-    // OPTIONAL — practice guidelines. Use `url` for org websites without a PMID/DOI.
+    // MINIMUM VIABLE — include 1. Use `url` for org websites without a PMID/DOI.
     guidelines: [
         {
             organization: "AAP",                 // e.g. AAP, GINA 2023, NICE
@@ -90,7 +108,7 @@ order below matches the order they render on the page.
         }
     ],
 
-    // OPTIONAL — the major RCTs, grouped by clinical theme.
+    // MINIMUM VIABLE — include 1-2 key trials grouped by clinical theme.
     // Keys are camelCase and become section sub-headings automatically.
     landmarkRCTs: {
         therapeutics: [
@@ -176,14 +194,14 @@ order below matches the order they render on the page.
     // OPTIONAL — narrative summary shown below the globalHealth table.
     globalHealthSummary: "A paragraph on how the global/LMIC picture differs from high-income settings.",
 
-    // OPTIONAL but recommended — the at-a-glance verdict, three columns.
+    // MINIMUM VIABLE — the at-a-glance verdict, three columns.
     bottomLine: {
         effective:   ["", ""],   // interventions with solid evidence of benefit
         uncertain:   ["", ""],   // promising or conflicting evidence
         ineffective: ["", ""]    // shown not to work (or to harm)
     },
 
-    // OPTIONAL — numbered teaching points. `**bold**` markdown is supported here.
+    // MINIMUM VIABLE — 3-5 numbered teaching points. `**bold**` supported here.
     keyTeachingPoints: [
         "**Lead phrase** — the rest of the teaching point.",
         ""
@@ -206,8 +224,10 @@ order below matches the order they render on the page.
 
 ## REQUEST TO CLAUDE
 
-Generate a complete `articlesData` entry, following the brief, rules, and
-template above, for this topic:
+Generate a **minimum viable entry** for the topic below, following the brief,
+rules, and the "Minimum Viable Entry" section above. Include only:
+`orientationReview`, `guidelines` (1), `landmarkRCTs` (1–2 trials),
+`bottomLine`, and `keyTeachingPoints`.
 
 **Topic:** `<PUT THE EXACT TOPIC NAME HERE>`
 **Subspecialty:** `<e.g. Pediatric Pulmonology>`
