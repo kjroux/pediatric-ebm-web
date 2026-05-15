@@ -5,76 +5,31 @@ const specialtiesData = {
         name: "Allergy/Immunology",
         icon: "🤧",
         issues: [
-            "Food allergies",
-            "Allergic rhinitis",
-            "Atopic dermatitis/eczema",
             "Anaphylaxis",
-            "Urticaria and angioedema",
-            "Drug allergies",
-            "Asthma: chronic management",
-            "Primary immunodeficiency disorders",
-            "DiGeorge syndrome",
-            "Wiskott-Aldrich syndrome",
-            "Ataxia-telangiectasia",
-            "Hyper-IgE syndrome",
-            "Serum sickness",
-            "Allergic bronchopulmonary aspergillosis"
+            "Food allergies",
+            "Atopic dermatitis/eczema",
+            "Asthma: chronic management"
         ]
     },
     "cardiology": {
         name: "Cardiology",
         icon: "❤️",
         issues: [
-            "Congenital heart defects",
             "Kawasaki disease",
-            "Rheumatic heart disease",
-            "Arrhythmias",
-            "Heart failure management",
-            "Syncope evaluation",
             "Innocent murmurs vs pathologic murmurs",
-            "Infective endocarditis",
-            "Myocarditis and dilated cardiomyopathy",
-            "Hypertrophic cardiomyopathy",
-            "Chest pain evaluation",
-            "Pulmonary hypertension"
-        ]
-    },
-    "cardiothoracic-surgery": {
-        name: "Cardiothoracic Surgery",
-        icon: "🫀",
-        issues: [
-            "Tetralogy of Fallot repair",
-            "Transposition of the great arteries",
-            "Hypoplastic left heart syndrome",
-            "Coarctation of the aorta",
-            "Patent ductus arteriosus ligation",
-            "Atrioventricular canal defect repair",
-            "Total anomalous pulmonary venous return repair",
-            "Truncus arteriosus repair",
-            "Congenital lung malformations",
-            "Vascular rings",
-            "Pectus excavatum and carinatum"
+            "Syncope evaluation",
+            "Chest pain evaluation"
         ]
     },
     "critical-care": {
         name: "Critical Care",
         icon: "🚨",
         issues: [
-            "Acute respiratory failure/ARDS",
             "Shock",
-            "Sepsis and septic shock",
-            "Traumatic brain injury",
-            "Multi-organ dysfunction syndrome",
-            "ECMO indications",
+            "Acute respiratory failure/ARDS",
             "Mechanical ventilation",
-            "Sedation and analgesia",
-            "Asthma: acute management",
-            "Severe DKA",
-            "Acute liver failure",
-            "Post-cardiac surgery care",
-            "Arrhythmia management",
-            "Brain death determination",
-            "Withdrawal of life support/palliative care"
+            "Status epilepticus",
+            "Sepsis and septic shock"
         ]
     },
     "developmental-behavioral": {
@@ -83,47 +38,24 @@ const specialtiesData = {
         issues: [
             "Autism spectrum disorder",
             "ADHD",
-            "Learning disabilities",
-            "Intellectual disability",
-            "Speech and language delays",
-            "Developmental milestones",
-            "Developmental screening tools",
-            "Global developmental delay",
-            "Behavioral disorders",
-            "Anxiety disorders in children",
-            "Depression in children and adolescents",
-            "School refusal",
-            "Enuresis and encopresis",
-            "Sleep disorders",
-            "Screen time recommendations",
-            "Early intervention services",
-            "IEP and 504 plans",
-            "Fetal alcohol spectrum disorders",
-            "Genetic syndromes with developmental impact"
+            "Developmental milestones and screening",
+            "Anxiety and depression in children and adolescents"
         ]
     },
     "emergency-medicine": {
         name: "Emergency Medicine",
         icon: "🚑",
         issues: [
+            "Head trauma",
+            "Poisoning/ingestions",
             "Trauma management",
-            "Sepsis and septic shock",
+            "Pediatric resuscitation",
+            "Procedural sedation",
+            "Child abuse recognition and reporting",
+            "Anaphylaxis",
             "Status epilepticus",
             "Diabetic ketoacidosis",
-            "Anaphylaxis",
-            "Poisoning/ingestions",
-            "Respiratory emergencies",
-            "Altered mental status",
-            "Pediatric resuscitation",
-            "Head trauma",
-            "Abdominal emergencies",
-            "Orthopedic emergencies",
-            "Burns",
-            "Drowning/submersion injuries",
-            "Environmental emergencies",
-            "Child abuse and neglect",
-            "Procedural sedation",
-            "Pain management"
+            "Sepsis and septic shock"
         ]
     },
     "endocrinology": {
@@ -131,82 +63,33 @@ const specialtiesData = {
         icon: "🩺",
         issues: [
             "Type 1 diabetes mellitus",
+            "Type 2 diabetes and obesity",
             "Diabetic ketoacidosis",
-            "Type 2 diabetes mellitus",
-            "Growth disorders",
             "Short stature evaluation",
-            "Growth hormone deficiency",
-            "Turner syndrome",
-            "Noonan syndrome",
-            "Thyroid disorders",
-            "Congenital hypothyroidism",
-            "Hashimoto thyroiditis",
-            "Graves disease",
-            "Thyroid nodules",
-            "Puberty disorders",
-            "Precocious puberty",
-            "Delayed puberty",
-            "Premature adrenarche vs thelarche",
-            "Adrenal disorders",
-            "Congenital adrenal hyperplasia",
-            "Adrenal insufficiency/Addisonian crisis",
-            "Cushing syndrome",
-            "Obesity and metabolic syndrome",
-            "Hypoglycemia",
-            "Disorders of sexual differentiation",
-            "Calcium/vitamin D disorders",
-            "Gynecomastia",
-            "PCOS in adolescents"
+            "Congenital hypothyroidism"
         ]
     },
     "ent": {
         name: "Otolaryngology (ENT)",
         icon: "👂",
         issues: [
-            "Tonsillitis/adenoiditis",
-            "Tonsillectomy indications",
-            "Obstructive sleep apnea",
             "Acute otitis media",
-            "Otitis media with effusion",
-            "Chronic otitis media/cholesteatoma",
-            "Tympanostomy tube placement",
-            "Thyroglossal duct cyst",
-            "Branchial cleft anomalies",
-            "Dermoid cysts",
-            "Lymphatic malformations",
-            "Laryngomalacia",
-            "Subglottic stenosis",
-            "Hearing loss",
-            "Cochlear implants",
+            "Obstructive sleep apnea and tonsillectomy indications",
             "Sinusitis",
             "Epistaxis",
-            "Peritonsillar abscess",
-            "Retropharyngeal/parapharyngeal abscess",
-            "Foreign bodies",
-            "Choanal atresia",
-            "Pierre Robin sequence"
+            "Hearing loss screening"
         ]
     },
     "gastroenterology": {
         name: "Gastroenterology",
         icon: "🫄",
         issues: [
-            "Gastroesophageal reflux vs GERD",
-            "Inflammatory bowel disease",
-            "Celiac disease",
+            "GERD vs physiologic reflux",
             "Failure to thrive",
-            "Chronic constipation/encopresis",
+            "Chronic constipation",
             "Acute abdominal pain",
-            "Chronic/recurrent abdominal pain",
-            "Hepatitis",
-            "Biliary atresia",
-            "Pancreatitis",
-            "GI bleeding",
-            "Eosinophilic esophagitis",
-            "Food protein-induced enterocolitis syndrome",
-            "Lactose intolerance vs milk protein allergy",
-            "Wilson disease",
-            "Alpha-1 antitrypsin deficiency"
+            "Inflammatory bowel disease",
+            "Celiac disease"
         ]
     },
     "general-surgery": {
@@ -216,19 +99,8 @@ const specialtiesData = {
             "Appendicitis",
             "Intussusception",
             "Pyloric stenosis",
-            "Inguinal hernias",
-            "Hydroceles",
-            "Umbilical hernias",
-            "Hirschsprung disease",
-            "Congenital diaphragmatic hernia",
-            "Malrotation and volvulus",
-            "Meckel's diverticulum",
-            "Gastroschisis vs omphalocele",
-            "Esophageal atresia/tracheoesophageal fistula",
-            "Imperforate anus",
-            "Necrotizing enterocolitis",
-            "Cholelithiasis/cholecystitis",
-            "Splenic injuries"
+            "Inguinal hernias and hydroceles",
+            "Necrotizing enterocolitis"
         ]
     },
     "hematology-oncology": {
@@ -236,31 +108,11 @@ const specialtiesData = {
         icon: "🩸",
         issues: [
             "Sickle cell disease",
-            "Vaso-occlusive crises",
-            "Acute chest syndrome",
-            "Splenic sequestration",
-            "Hemophilia A and B",
-            "Von Willebrand disease",
             "Iron deficiency anemia",
-            "Thalassemias",
-            "Hereditary spherocytosis",
-            "G6PD deficiency",
             "Immune thrombocytopenic purpura",
-            "Thrombocytopenia",
-            "Neutropenia",
+            "Bleeding disorders (hemophilia and VWD)",
             "Acute lymphoblastic leukemia",
-            "Acute myeloid leukemia",
             "Brain tumors",
-            "Neuroblastoma",
-            "Wilms tumor",
-            "Hodgkin lymphoma",
-            "Non-Hodgkin lymphoma",
-            "Osteosarcoma",
-            "Ewing sarcoma",
-            "Retinoblastoma",
-            "Rhabdomyosarcoma",
-            "Langerhans cell histiocytosis",
-            "Hemophagocytic lymphohistiocytosis",
             "Tumor lysis syndrome"
         ]
     },
@@ -269,38 +121,21 @@ const specialtiesData = {
         icon: "🏥",
         issues: [
             "Bronchiolitis",
-            "Community-acquired pneumonia",
             "Sepsis and septic shock",
-            "Asthma: acute management",
             "Croup",
+            "Community-acquired pneumonia",
+            "Asthma: acute management",
             "Dehydration/gastroenteritis",
             "Fever management and workup",
             "Urinary tract infections",
             "Skin and soft tissue infections",
-            "Acute otitis media complications",
             "Diabetic ketoacidosis",
             "Seizures",
-            "Sickle cell disease complications",
-            "Failure to thrive",
-            "Brief resolved unexplained events",
-            "Apparent life-threatening events",
             "Neonatal hyperbilirubinemia",
             "Neonatal fever workup",
-            "Kawasaki disease",
-            "Acute chest pain evaluation",
-            "Syncope workup",
-            "Medication reconciliation and polypharmacy",
-            "Care coordination and discharge planning",
-            "Family-centered rounds",
-            "Handoff communication",
-            "Quality improvement and patient safety",
+            "Brief resolved unexplained events",
             "Antimicrobial stewardship",
-            "Venous thromboembolism prophylaxis",
             "Pain management",
-            "Nutritional support",
-            "Technology-dependent children",
-            "Medical complexity and care coordination",
-            "Social determinants of health",
             "Child abuse recognition and reporting",
             "Observation vs inpatient status"
         ]
@@ -310,26 +145,14 @@ const specialtiesData = {
         icon: "🦠",
         issues: [
             "Immunization schedules",
-            "Vaccine-preventable diseases",
-            "Meningitis",
+            "Bacterial meningitis",
             "Encephalitis",
             "Osteomyelitis",
-            "Septic arthritis",
-            "Congenital infections",
-            "HIV/AIDS in children",
-            "Tuberculosis",
+            "Septic arthritis vs transient synovitis",
             "Lyme disease",
-            "Rocky Mountain spotted fever",
-            "Kawasaki disease",
-            "Infectious mononucleosis",
-            "Group A strep infections",
-            "Skin and soft tissue infections",
-            "Cat scratch disease",
-            "Parasitic infections",
-            "Fungal infections",
-            "Fever of unknown origin",
             "Fever without source in young infants",
-            "Antimicrobial stewardship"
+            "Kawasaki disease",
+            "Acute otitis media"
         ]
     },
     "neonatology": {
@@ -338,29 +161,12 @@ const specialtiesData = {
         issues: [
             "Respiratory distress syndrome",
             "Transient tachypnea of the newborn",
-            "Meconium aspiration syndrome",
-            "Persistent pulmonary hypertension",
             "Neonatal jaundice/hyperbilirubinemia",
-            "Physiologic vs pathologic jaundice",
-            "Phototherapy and exchange transfusion",
-            "Necrotizing enterocolitis",
-            "Intraventricular hemorrhage",
-            "Periventricular leukomalacia",
-            "Bronchopulmonary dysplasia",
             "Neonatal sepsis",
-            "Retinopathy of prematurity",
-            "Apnea of prematurity",
-            "Anemia of prematurity",
-            "Patent ductus arteriosus",
+            "Neonatal hypoglycemia",
+            "Hypoxic-ischemic encephalopathy",
             "Neonatal abstinence syndrome",
-            "Hypoglycemia in newborns",
-            "Congenital anomalies",
-            "Neonatal resuscitation",
-            "Temperature regulation",
-            "Feeding and nutrition",
-            "Common birth injuries",
-            "Neonatal seizures",
-            "Hypoxic-ischemic encephalopathy"
+            "Necrotizing enterocolitis"
         ]
     },
     "nephrology": {
@@ -368,24 +174,11 @@ const specialtiesData = {
         icon: "🫘",
         issues: [
             "Nephrotic syndrome",
-            "Minimal change disease",
-            "Focal segmental glomerulosclerosis",
-            "Glomerulonephritis",
-            "Post-streptococcal glomerulonephritis",
-            "IgA nephropathy",
-            "Membranoproliferative glomerulonephritis",
-            "Hematuria evaluation",
-            "Proteinuria evaluation",
-            "Hypertension",
-            "Chronic kidney disease",
             "Acute kidney injury",
+            "Pediatric hypertension",
             "Hemolytic uremic syndrome",
-            "Urinary tract infections",
-            "Polycystic kidney disease",
-            "Renal tubular acidosis",
-            "Nephrolithiasis",
-            "Alport syndrome",
-            "Enuresis"
+            "Hematuria and proteinuria evaluation",
+            "Urinary tract infections"
         ]
     },
     "neurology": {
@@ -394,72 +187,25 @@ const specialtiesData = {
         issues: [
             "Febrile seizures",
             "Epilepsy syndromes",
-            "Infantile spasms/West syndrome",
-            "Childhood absence epilepsy",
-            "Juvenile myoclonic epilepsy",
-            "Lennox-Gastaut syndrome",
-            "Benign rolandic epilepsy",
             "Status epilepticus",
-            "Headaches/migraines",
+            "Headache/migraine",
             "Cerebral palsy",
-            "Developmental delays",
-            "Tic disorders/Tourette syndrome",
-            "Movement disorders",
-            "Neuromuscular disorders",
-            "Duchenne and Becker muscular dystrophy",
-            "Spinal muscular atrophy",
-            "Guillain-Barré syndrome",
-            "Myasthenia gravis",
-            "Stroke in children",
-            "Increased intracranial pressure",
-            "Pseudotumor cerebri",
-            "Neurofibromatosis",
-            "Tuberous sclerosis",
-            "Ataxia",
-            "Hypotonia",
-            "Neonatal encephalopathy/HIE",
-            "White matter diseases"
+            "Concussion/mild TBI"
         ]
     },
     "neurosurgery": {
         name: "Neurosurgery",
         icon: "🧠",
         issues: [
-            "Hydrocephalus",
-            "Shunt malfunction/infection",
-            "Brain tumors",
-            "Craniosynostosis",
-            "Myelomeningocele/spina bifida",
-            "Tethered cord syndrome",
-            "Lipomyelomeningocele",
-            "Chiari malformations",
-            "Traumatic brain injury",
-            "Epidural hematoma",
-            "Subdural hematoma",
-            "Arachnoid cysts",
-            "Encephalocele",
-            "Dandy-Walker malformation",
-            "Intracranial hemorrhage"
+            "Shunt malfunction/infection"
         ]
     },
     "ophthalmology": {
         name: "Ophthalmology",
         icon: "👁️",
         issues: [
-            "Strabismus",
-            "Amblyopia",
-            "Retinopathy of prematurity",
-            "Congenital cataracts",
-            "Congenital glaucoma",
-            "Nasolacrimal duct obstruction",
-            "Refractive errors",
-            "Leukocoria",
-            "Preseptal vs orbital cellulitis",
-            "Conjunctivitis",
-            "Pediatric eye trauma",
-            "Cortical visual impairment",
-            "Nystagmus",
-            "Red reflex screening"
+            "Vision screening abnormalities",
+            "Preseptal vs orbital cellulitis"
         ]
     },
     "orthopedic-surgery": {
@@ -467,45 +213,17 @@ const specialtiesData = {
         icon: "🦴",
         issues: [
             "Developmental dysplasia of the hip",
-            "Clubfoot/talipes equinovarus",
-            "Scoliosis",
-            "Slipped capital femoral epiphysis",
-            "Legg-Calvé-Perthes disease",
-            "Supracondylar fractures",
-            "Salter-Harris classification",
-            "Toddler's fracture",
-            "Buckle/torus fractures",
-            "Greenstick fractures",
-            "Osgood-Schlatter disease",
-            "Nursemaid's elbow",
-            "Limb length discrepancies",
-            "Osteomyelitis",
-            "Septic arthritis",
-            "Bone tumors",
-            "Torticollis",
-            "Genu varum and genu valgum",
-            "In-toeing and out-toeing",
-            "Flat feet"
+            "Septic arthritis vs transient synovitis",
+            "Common pediatric fractures",
+            "Limp evaluation",
+            "Nursemaid's elbow"
         ]
     },
     "plastic-surgery": {
         name: "Plastic Surgery",
         icon: "✨",
         issues: [
-            "Cleft lip and palate",
-            "Craniosynostosis",
-            "Infantile hemangiomas",
-            "Vascular malformations",
-            "Port wine stains",
-            "Syndactyly",
-            "Polydactyly",
-            "Trigger thumb",
-            "Constriction band syndrome",
-            "Ear anomalies",
-            "Burn management",
-            "Traumatic injuries and reconstruction",
-            "Skin lesions",
-            "Breast anomalies"
+            "Infantile hemangiomas"
         ]
     },
     "pulmonology": {
@@ -513,19 +231,11 @@ const specialtiesData = {
         icon: "🫁",
         issues: [
             "Asthma: chronic management",
-            "Cystic fibrosis",
             "Bronchiolitis",
-            "Pneumonia",
+            "Cystic fibrosis",
             "Chronic cough evaluation",
-            "Sleep-disordered breathing/obstructive sleep apnea",
             "Foreign body aspiration",
-            "Bronchopulmonary dysplasia",
-            "Primary ciliary dyskinesia",
-            "Apparent life-threatening events",
-            "Brief resolved unexplained events",
-            "Vocal cord dysfunction",
-            "Interstitial lung disease",
-            "Pulmonary function test interpretation"
+            "Community-acquired pneumonia"
         ]
     },
     "rheumatology": {
@@ -533,20 +243,10 @@ const specialtiesData = {
         icon: "🦵",
         issues: [
             "Juvenile idiopathic arthritis",
+            "HSP / IgA vasculitis",
             "Systemic lupus erythematosus",
-            "Henoch-Schönlein purpura/IgA vasculitis",
-            "Juvenile dermatomyositis",
-            "Vasculitis syndromes",
-            "Scleroderma",
-            "Mixed connective tissue disease",
-            "Reactive arthritis",
-            "Autoinflammatory diseases",
-            "Familial Mediterranean fever",
-            "PFAPA syndrome",
-            "Macrophage activation syndrome",
             "Growing pains",
-            "Transient synovitis vs septic arthritis",
-            "Sarcoidosis"
+            "Septic arthritis vs transient synovitis"
         ]
     },
     "urology": {
@@ -555,19 +255,8 @@ const specialtiesData = {
         issues: [
             "Urinary tract infections",
             "Vesicoureteral reflux",
-            "Hydronephrosis/ureteropelvic junction obstruction",
-            "Hypospadias",
-            "Undescended testes/cryptorchidism",
-            "Posterior urethral valves",
             "Testicular torsion",
-            "Epididymitis vs torsion",
-            "Varicocele",
-            "Phimosis and paraphimosis",
-            "Circumcision",
-            "Urolithiasis",
-            "Labial adhesions",
-            "Neurogenic bladder",
-            "Bladder exstrophy"
+            "Undescended testes/cryptorchidism"
         ]
     }
 };
