@@ -21,7 +21,7 @@ what doesn't, and what's still uncertain.
 
 **How the data is structured:**
 
-- `specialtiesData` — 23 subspecialties, each listing its clinical topics ("issues").
+- `specialtiesData` — 22 subspecialties, each listing its clinical topics ("issues").
 - `articlesData` — the article content, keyed by **topic name**. A topic page
   appears as soon as an entry exists in `articlesData` whose key exactly matches
   the topic string in `specialtiesData`.
