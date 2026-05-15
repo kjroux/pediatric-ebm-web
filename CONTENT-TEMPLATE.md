@@ -13,10 +13,11 @@ evidence-based medicine for pediatric subspecialties. It is built with plain
 HTML/CSS/JavaScript — no framework, no build step. All content lives in
 `data.js`.
 
-The audience is **clinicians and trainees** (residents, fellows, attendings).
-Content should be concise, clinical, and assume medical literacy. The goal is a
-fast orientation to the best evidence on a clinical topic: the landmark trials,
-the guidelines, what works, what doesn't, and what's still uncertain.
+The audience is **clinicians and trainees** (residents, fellows, attendings)
+practicing primarily in **US settings**. Content should be concise, clinical,
+and assume medical literacy. The goal is a fast orientation to the best
+evidence on a clinical topic: the landmark trials, the guidelines, what works,
+what doesn't, and what's still uncertain.
 
 **How the data is structured:**
 
@@ -30,18 +31,32 @@ the guidelines, what works, what doesn't, and what's still uncertain.
 1. **Only cite real, verifiable studies.** Every PMID and DOI must be accurate
    and resolve to the cited paper. Do not invent trials, authors, or identifiers.
    If you are not confident a reference is real, leave it out.
-2. **The `articlesData` key must exactly match** the topic string as it appears
+2. **Prefer US guidelines.** When choosing the single guideline for a minimum
+   viable entry, default to US-issued guidance — AAP, AAFP, ACOG (where
+   relevant), CDC, NIH/NHLBI, IDSA, ACR, AHA, etc. Fall back to international
+   bodies (NICE, GINA, GOLD, ERS, WHO) only when no US guideline exists, when
+   the US guideline is materially out of date, or when the international
+   guideline is clearly the global reference standard for the topic. If
+   including additional guidelines beyond the minimum, list the US one first.
+3. **Prefer top-tier journals for `orientationReview`.** The single anchor
+   review should come from NEJM, Lancet (or Lancet Child & Adolescent Health),
+   Pediatrics, or JAMA Pediatrics whenever a high-quality review exists in
+   those venues. Specialty journals (e.g. Pediatric Pulmonology, J Pediatr,
+   Pediatr Crit Care Med) are acceptable only when no recent top-tier review
+   is available. Recency matters — favor reviews from the last ~5 years unless
+   an older landmark review remains the definitive synthesis.
+4. **The `articlesData` key must exactly match** the topic string as it appears
    in `specialtiesData` (including capitalization and punctuation, e.g.
    `"Asthma: chronic management"`).
-3. **`n` in `landmarkRCTs` must be a number**, not a string (e.g. `n: 800`).
-4. `orientationReview` is required — its presence is what tells the app to use
+5. **`n` in `landmarkRCTs` must be a number**, not a string (e.g. `n: 800`).
+6. `orientationReview` is required — its presence is what tells the app to use
    the rich layout. All other sections are optional; omit any section you don't
    have solid evidence for, don't pad.
-5. `landmarkRCTs` subsection keys are **camelCase** and auto-render as Title Case
+7. `landmarkRCTs` subsection keys are **camelCase** and auto-render as Title Case
    (e.g. `maintenanceTherapy` → "Maintenance Therapy"). Name them by clinical
    theme.
-6. `keyTeachingPoints` strings may use `**bold**` markdown; no other fields do.
-7. Keep `finding` / `conclusion` / `contribution` text to roughly one sentence —
+8. `keyTeachingPoints` strings may use `**bold**` markdown; no other fields do.
+9. Keep `finding` / `conclusion` / `contribution` text to roughly one sentence —
    these render inside table cells.
 
 ---
@@ -54,8 +69,9 @@ full template (below) can be added later when fleshing the topic out.
 
 A minimum viable entry contains exactly these sections:
 
-- `orientationReview` — **1** authoritative review (required).
-- `guidelines` — **1** practice guideline.
+- `orientationReview` — **1** authoritative review (required). Prefer NEJM,
+  Lancet, Pediatrics, or JAMA Pediatrics.
+- `guidelines` — **1** practice guideline. Prefer a US source.
 - `landmarkRCTs` — **1–2** key trials, grouped under one clinical theme.
 - `bottomLine` — the three-column at-a-glance verdict.
 - `keyTeachingPoints` — 3–5 numbered teaching points.
@@ -75,6 +91,9 @@ order below matches the order they render on the page.
 ```javascript
 "EXACT TOPIC NAME": {
     // REQUIRED — triggers the rich layout. One authoritative review/seminar.
+    // PREFER top-tier journals: NEJM, Lancet (incl. Lancet Child & Adolescent
+    // Health), Pediatrics, JAMA Pediatrics. Drop to a specialty journal only
+    // if no high-quality top-tier review exists.
     orientationReview: {
         title: "",
         authors: "Last FM, Last FM, Last FM",   // up to ~4 names, no "et al." needed
@@ -96,10 +115,14 @@ order below matches the order they render on the page.
         }
     ],
 
-    // MINIMUM VIABLE — include 1. Use `url` for org websites without a PMID/DOI.
+    // MINIMUM VIABLE — include 1. PREFER a US guideline (AAP, AAFP, CDC,
+    // NIH/NHLBI, IDSA, ACR, AHA, etc.). Use international guidance (NICE,
+    // GINA, GOLD, ERS, WHO) only when no US equivalent exists or it is the
+    // accepted global standard. If listing several, put the US one first.
+    // Use `url` for org websites without a PMID/DOI.
     guidelines: [
         {
-            organization: "AAP",                 // e.g. AAP, GINA 2023, NICE
+            organization: "AAP",                 // prefer US: AAP, AAFP, CDC, NIH, IDSA, AHA, ACR
             citation: "Author. Journal. Year;Vol:Pages",
             pmid: "",
             doi: "",
@@ -228,6 +251,12 @@ Generate a **minimum viable entry** for the topic below, following the brief,
 rules, and the "Minimum Viable Entry" section above. Include only:
 `orientationReview`, `guidelines` (1), `landmarkRCTs` (1–2 trials),
 `bottomLine`, and `keyTeachingPoints`.
+
+For the `orientationReview`, prefer a recent review from NEJM, Lancet (or
+Lancet Child & Adolescent Health), Pediatrics, or JAMA Pediatrics. For the
+`guidelines` entry, prefer a US guideline (AAP, AAFP, CDC, NIH/NHLBI, IDSA,
+ACR, AHA, etc.) and fall back to international guidance only when no US
+equivalent exists or it is the accepted global standard.
 
 **Topic:** `<PUT THE EXACT TOPIC NAME HERE>`
 **Subspecialty:** `<e.g. Pediatric Pulmonology>`
